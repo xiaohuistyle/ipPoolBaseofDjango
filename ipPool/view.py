@@ -129,3 +129,7 @@ def unicode(request):
     context = {}
     context['hello'] = 'Hello World!'
     return render(request, 'unicode.html', context)
+def ipMain(request):
+    context = {}
+    context['hello'] = 'Hello World!'
+    return render(request, 'ipMain.html', context)

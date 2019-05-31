@@ -1,7 +1,7 @@
 from django.conf.urls import url
  
-from . import view, testdb
- 
+from . import view, ipTableModel, SearchLayer
+
 urlpatterns = [
     url('hello/', view.hello),
     url('login/', view.Login),
@@ -37,7 +37,7 @@ urlpatterns = [
     url('order_list/', view.order_list, name='order_list'),
     url('role_add/', view.role_add, name='role_add'),
     url('unicode/', view.unicode, name='unicode'),
-
-    url(r'^testdb$', testdb.testdb),
-
+    #ip池功能
+    url('ipMain/', view.ipMain, name='ipMain'),
+    url('SearchIp/', SearchLayer.search_routers, name='SearchIp'),
 ]

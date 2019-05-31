@@ -3,4 +3,5 @@ from django.db import models
 
 
 class IpModel(models.Model):
-    name = models.CharField(max_length=20)
+    Address = models.CharField(max_length=20)
+    port = models.CharField(max_length=20)
